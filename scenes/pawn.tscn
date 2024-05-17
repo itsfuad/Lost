@@ -1,0 +1,114 @@
+[gd_scene load_steps=16 format=3 uid="uid://bbulvlprr3d8h"]
+
+[ext_resource type="Texture2D" uid="uid://cbayrj8jhfvv" path="res://sprites/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Blue/Pawn_Blue.png" id="1_d8yos"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy2cw"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6iao"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc7pq"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ki8md"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b72gi"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14e17"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsqsx"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(0, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_447rr"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(192, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbq0b"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(384, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26v50"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(576, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy44i"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(768, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8arv"]
+atlas = ExtResource("1_d8yos")
+region = Rect2(960, 576, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_evhv7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy2cw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6iao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gc7pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ki8md")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b72gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14e17")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsqsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_447rr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbq0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26v50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qy44i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8arv")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i1082"]
+radius = 17.0
+height = 50.0
+
+[node name="Pawn" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_evhv7")
+offset = Vector2(0, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -14)
+shape = SubResource("CapsuleShape2D_i1082")

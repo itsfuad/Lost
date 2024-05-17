@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://kj0iogr83r06"]
+
+[ext_resource type="Texture2D" uid="uid://b7fi6xaoe2lf2" path="res://sprites/Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/Rocks/Rocks_01.png" id="1_1it04"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bof0f"]
+atlas = ExtResource("1_1it04")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umykr"]
+atlas = ExtResource("1_1it04")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5q6t"]
+atlas = ExtResource("1_1it04")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hht7k"]
+atlas = ExtResource("1_1it04")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhuas"]
+atlas = ExtResource("1_1it04")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5y5kp"]
+atlas = ExtResource("1_1it04")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3mr2"]
+atlas = ExtResource("1_1it04")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_punrs"]
+atlas = ExtResource("1_1it04")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dx2cg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bof0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umykr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5q6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hht7k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhuas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5y5kp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3mr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_punrs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="smallRock" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_dx2cg")
+autoplay = "default"
+frame = 1
+frame_progress = 0.246385

@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://c0a0o82sbbpj4"]
+
+[ext_resource type="Texture2D" uid="uid://b6286h2dyrjm8" path="res://sprites/Tiny Swords/Tiny Swords (Update 010)/Terrain/Water/Rocks/Rocks_04.png" id="1_qgxja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulean"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t0a3"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10ttb"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e81fg"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6d47w"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xug41"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35dxy"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ryyk"]
+atlas = ExtResource("1_qgxja")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u841d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulean")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4t0a3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10ttb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e81fg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6d47w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xug41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35dxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ryyk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="bigRock" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_u841d")
+autoplay = "default"
